@@ -6,7 +6,7 @@ notice of usage of iredis on https://github.com/laixintao/iredis
 
 # Usage
 
-If you have not a redus server you can run a server with docker
+If you have not a redis server you can run a server with docker
 
 ```
 docker run --name redis -p 6379:6379 --hostname=redis -d redis
