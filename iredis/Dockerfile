@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 RUN \
  apk add --no-cache --virtual .build-deps gcc musl-dev libffi libffi-dev openssl-dev python3-dev && \
- pip install --no-cache-dir iredis==1.9.0 && \
+ pip install --no-cache-dir iredis==1.9.1 && \
  apk --purge del .build-deps
 RUN mkdir /out
 VOLUME [ "/out" ]
