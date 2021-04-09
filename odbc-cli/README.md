@@ -1,6 +1,6 @@
 # odbc-cli
 
-You can use a docker image to run odbc-cli.  This image uses `unixODBC` for a driver-manager, and comes with the following drivers pre-installed (listed here by name):
+You can use a docker image to run [odbc-cli](https://detule.github.io/odbc-cli).  This image uses `unixODBC` for a driver-manager, and comes with the following drivers pre-installed (listed here by name):
 
 * SQLite
 * SQLite3
@@ -12,7 +12,7 @@ You can use a docker image to run odbc-cli.  This image uses `unixODBC` for a dr
 
 You may need to extend this docker image if you wish to make additional drivers available.  You should also note that this docker image tracks the "master" branch in the *odbc-cli* repository; as such, it should be considered the latest/development version of the client, and may be at times ahead of the version released to PyPI.
 
-# Usage
+# Usage
 
 To create a running instance of the client, use the `docker run` command.  However since `odbc-cli` requires a pre-populated INI configuration file of data-sources, you will also need to bind your config to a location where unixODBC (the driver manager in the image) can locate it.
 
